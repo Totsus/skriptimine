@@ -43,4 +43,4 @@ mv .- jne
 
 i)kontrolli staatust
 git status
-Ülejäänu SOP + gut add, git commit -m, git push -u origin master
+Ülejäänu SOP + gut add, git commit -m, git push -u origin (küsimus miks origin) master
