@@ -25,11 +25,22 @@ git remote add (kausta nim)https://github.com/Totsus/skriptimine
 git remote -v (-v näitab URL)
 
 g)lisa fail jälgimisele github+i
-git add git_kasutamine
+git add (faili nimi git_kasutamine)
 git commit -m "abil saab kirjeldada tehtud muudatuste sisu"
-git puch -uf skriptimine master - saadab muudatused github-i, selleks küsib kasutajat ja parooli
+git puch -uf (kataloog skriptimine) master - saadab muudatused github-i, selleks küsib kasutajat ja parooli
 
 tulemust saab konrollida github+s
  
 salvesta tulemus ja saada uus info reposit
 
+h)kui midagi kaob või ei tööta
+tõsta reposit(kaust skriptimine)välja kõik filed mida sa ein ole comminud github+i
+kustuta vigane reposit
+klooni  githubist korralik:
+git clone https://github.com/Totsus/skriptimine.git - .git pane ise
+tõsta failid tagasi oma kohale.
+mv .- jne
+
+i)kontrolli staatust
+git status
+Ülejäänu SOP + gut add, git commit -m, git push -u origin master
