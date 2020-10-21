@@ -18,3 +18,18 @@ cd skriptimine
 d)tekita lokaalne reposit git süsteemi jaoks selles kaustas
 git init
 
+e)Loo versioonide hoiomiseks koht N:github.com
+
+f)tekita ühendus kohaliku  reposit ja github vahel
+git remote add (kausta nim)https://github.com/Totsus/skriptimine
+git remote -v (-v näitab URL)
+
+g)lisa fail jälgimisele github+i
+git add git_kasutamine
+git commit -m "abil saab kirjeldada tehtud muudatuste sisu"
+git puch -uf skriptimine master - saadab muudatused github-i, selleks küsib kasutajat ja parooli
+
+tulemust saab konrollida github+s
+ 
+salvesta tulemus ja saada uus info reposit
+
