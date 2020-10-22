@@ -1,0 +1,49 @@
+#!/bin/bash
+
+# This is a comment
+
+ echo "The current directory is:"
+
+ pwd
+
+ echo "The user logged in  is:"
+
+ whoami
+
+# Display user home
+
+ echo "Home for the current user is: $HOME"
+
+ echo "I have \$1 in my pocket"
+
+# User varibles
+
+ grade=5
+
+ person="Otsus"
+
+ echo "$person is a good boy, he is in grade $grade" 
+
+ mydir=$(pwd)
+
+ echo $mydir
+
+ var1=$((5+5))
+
+ echo $var1
+
+ var2=$(($var1*2))
+
+ echo $var2
+
+if whoami; then
+
+	echo "It works"
+
+fi
+
+user=user
+if grep $user /etc/passwd; then
+	echo "No such a user $user"
+
+fi
