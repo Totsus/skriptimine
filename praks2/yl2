@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Praks2 ülesanne 1 skript
+#Skript peab võimaldama tervitada kasutajat.
+
+ user=Oliver
+
+if grep $user /etc/passwd; then
+
+	echo "Tere, $user!"
+else
+	echo "Tere, kasutaja!"
+fi
