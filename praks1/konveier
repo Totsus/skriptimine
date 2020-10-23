@@ -41,9 +41,109 @@ if whoami; then
 	echo "It works"
 
 fi
-
-user=user
+# kasutaja otsing kaustast
+user=nobody
 if grep $user /etc/passwd; then
+	echo "The user $user exists"
+ else
 	echo "No such a user $user"
+
+fi
+#kasutaja otsing vol2
+user=nobody
+if grep $user /etc/passwd; then
+        echo "The user $user exists"
+ elif ls /home; then
+        echo "No such a user $user"
+
+fi
+
+#kombineeritud tegevus
+
+dir=/home/user
+name="user"
+
+if [ -d $dir ] && [ -n $name ]; then
+	echo "The name exists and the folder $dir exists."
+
+ else
+	echo "One test failed"
+ fi
+#sama lahendus teiste märkidega
+dir=/home/user
+name="user"
+
+if [ -d $dir ] || [ -n $name ]; then
+        echo "Õnnestus."
+
+ else
+        echo "Test ebaõnnestus"
+ fi
+
+###### Numbrite võrdlemine
+
+ num=11
+
+ if [ $num -gt 10 ]; then
+	echo "$num is bigger than 10"
+ else
+	echo "$num is less than 10"
+
+ fi
+
+#######Võrdlemine
+
+ user="Otsus"
+
+ if [ $user=$USER ]; then
+
+	echo "The user $user is the current logged in user"
+ fi
+
+####### /> või /<
+
+ v1=text
+
+ v2="another text"
+
+ if [ $v1 \> "$v2" ]; then
+
+	echo "$v1 is greater than $v2"
+
+ else
+
+	echo "$v1 is less than $v2"
+
+ fi
+
+# Võrdlus kui kasutada suurt vs väikest tähte
+
+
+ v1=tanelotsus
+
+ v2="Tanelotsus"
+
+ if [ $v1 \> "$v2" ]; then
+
+        echo "$v1 is greater than $v2"
+
+ else
+
+        echo "$v1 is less than $v2"
+
+ fi
+
+#### Failide võrdlemine
+
+ mydir=/home/user
+
+if [ -d $mydir ]; then
+	echo "Kataloog $mydir on olemas"
+	cd $mydir
+	ls
+
+else
+
+	echo "Pole sellist kataloogi või faili $mydir"
 
 fi
