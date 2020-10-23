@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Praks2 ülesanne 1 skript
+#Skript peab võimaldama tervitada kasutajat.
+
+user=User
+ 	echo "Tere, $user" \
+"!"
