@@ -1,0 +1,10 @@
+#! /bin/bash
+# Kuupäeva ja aja esitamine 
+ date
+#kalender
+
+echo ""
+echo "KÄESOLEV JA JÄRGMINE KUU 2020"
+
+ cal -A 1
+
