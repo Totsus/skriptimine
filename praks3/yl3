@@ -4,16 +4,16 @@
         echo "Sisesta ainepunktid:"
         read num1
         result1=`expr 26 \* $num1`
-        echo :$result1
+        echo $result1
         echo "Sisesta nädalad:"
         read num2
-        result2=`expr $result1 / $num2`
-#       echo :$result2 EKP
-
-        ymarda="`echo "($result2+0.9)/1" | bc`"
-        echo $ymarda
+        result2=`expr "scale=1; $result1/$num2" | bc`
+	ymarda="`expr "($result2+0.9)/1" | bc`" 
+        echo $ymarda EKP
 
 
-#aeg=`echo "scale=1;78/10" |bc`
-#echo $aeg
+#	aeg=`echo "scale=1;78/10" |bc`
+#	echo $aeg
+#	aeg_ymarda="`echo "($aeg+0.9)/1" | bc`"
+#	echo $aeg_ymarda
 
