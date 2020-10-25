@@ -1,0 +1,8 @@
+#!/bin/bask
+
+#yl2 President
+#Muutuja loomine väärtuse andmine ja lause loomine nende abil 
+President='Kersti Kaljulaid'
+Aastal='2016'
+        echo $Aastal valiti  Eesti presidendiks $President ?
+
