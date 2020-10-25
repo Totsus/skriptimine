@@ -1,0 +1,19 @@
+#!/bin/bash
+#yl3 matemaatika ja EKP arvutus ümardamisega ülesse
+
+        echo "Sisesta ainepunktid:"
+        read num1
+        result1=`expr 26 \* $num1`
+        echo :$result1
+        echo "Sisesta nädalad:"
+        read num2
+        result2=`expr $result1 / $num2`
+#       echo :$result2 EKP
+
+        ymarda="`echo "($result2+0.9)/1" | bc`"
+        echo $ymarda
+
+
+#aeg=`echo "scale=1;78/10" |bc`
+#echo $aeg
+
