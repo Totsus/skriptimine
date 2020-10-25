@@ -1,0 +1,7 @@
+#!/bin/bash
+#Kasutaja Ees- ja perenime küsimine
+user=Otsuse
+	echo "Tere!Olen $user arvuti!"
+echo -n "Kuidas on sinu nimi?"
+read nimi
+echo "Tere, $nimi"
