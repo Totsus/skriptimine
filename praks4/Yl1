@@ -1,0 +1,17 @@
+#!/bin/bash
+
+##Tingimuslikud ülesannded: paaris ja paaritu arvu nimietamine numbri järgi
+
+	echo -n "Sisesta täisarv:"
+	read num1
+#arvutamine jääk 2 jagamisel
+	jaak=$(($num1 % 2))
+# 4 % 2 => 0 -> siis arv on paaris
+#5 % 2 => 1 -> siis arv on paaritu
+if [ $jaak -eq 0 ]
+then
+	echo "$num1 on paaris"
+else
+	echo "$num1 on paaritu"
+fi
+
