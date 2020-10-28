@@ -1,0 +1,28 @@
+#!/bin/bash
+
+#### Bussi graafik ekskursiooni juhile"
+
+	echo -n "Sisesta reisijate arv:"
+	read num1
+
+	echo -n "Sisesta bussi mahutavus:"
+	read num2
+	
+	result=`expr $num2 - $num1`
+##	 echo $result 
+
+	bussid=$(($num1 / $num2))
+	ylejaanud=$(($num1 % $num2))
+
+if [ $ylejaanud -gt 0 ]
+	then
+	bussid=$(($bussid + 1))	
+
+ymarda="`expr "($bussid+0.9)/1" | bc`"
+       
+fi
+
+	echo "Kokku on vaja $bussid bussi!"
+
+
+	

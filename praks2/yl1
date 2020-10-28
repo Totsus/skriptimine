@@ -3,6 +3,6 @@
 # Praks2 ülesanne 1 skript
 #Skript peab võimaldama tervitada kasutajat.
 
-user=User
+user=Tanel
  	echo "Tere, $user" \
-"!"
+	"!"
