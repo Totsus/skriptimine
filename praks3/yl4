@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#### Bussi graafik ekskursiooni juhile"
+
+	echo -n "Sisesta reisijate arv:"
+	read num1
+
+	echo -n "Sisesta bussi mahutavus:"
+	read num2
+	
+	result=`expr $num2 - $num1`
+##	 echo $result 
+if [ $result -lt 0 ]
+then
+	echo "$result inimest vajavad bussi"
+else
+	echo "$result tühja kohta jääb bussi"
+fi
