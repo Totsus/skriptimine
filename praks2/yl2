@@ -1,13 +1,11 @@
 #!/bin/bash
 
-# Praks2 ülesanne 1 skript
+# Praks2 ülesanded 2
 #Skript peab võimaldama tervitada kasutajat.
 
- user=Oliver
 
-if grep $user /etc/passwd; then
+Nimetaht=$(whoami | cut -c1 | tr [a-z] [A-Z])
+Nimetaht2=$(whoami | cut -c2-)
 
-	echo "Tere, $user!"
-else
-	echo "Tere, kasutaja!"
-fi
+echo "Tere, $Nimetaht$Nimetaht2"
+echo "!"
