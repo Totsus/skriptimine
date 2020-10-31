@@ -1,0 +1,18 @@
+#!/bin/bash
+# Vanuse nimetamine ja vastavalt vanusele inimese grupeerimine
+	echo "Sisesta oma vanus:"
+read vanus
+
+
+if [ $vanus -lt 12 ]
+then
+	echo "Oled laps"
+elif [ $vanus -lt 18 ]
+then
+	echo "Oled nooruk"
+elif [ $vanus -lt 65 ]
+then
+	echo "Oled täiskasvanud"
+else
+	echo "Oled seenior"
+fi
