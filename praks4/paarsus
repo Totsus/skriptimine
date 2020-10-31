@@ -1,0 +1,13 @@
+#!/bin/bash
+
+##Teade  skripti käivitamiseks ja hoiatus kui parameeetreid ei täideta##
+	echo "$1"
+	jaak=$(($1 % 2))
+
+if [ $jaak -eq 0 ]
+then
+	echo "$num1 on paaris"
+else
+	echo "$num1 on paaritu"
+fi
+
