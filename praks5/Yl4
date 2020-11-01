@@ -1,0 +1,25 @@
+#!/bin/bash
+##Tervitamine vastavalt kellaajale
+Nimetaht=$(whoami | cut -c1 | tr [a-z] [A-Z])
+Nimetaht2=$(whoami | cut -c2-)
+
+aeg=`date +%H` 
+
+#aeg=`date +%H`
+
+if [ $aeg -ge 6 -a $aeg -lt 12 ]
+then
+	echo " Tere hommikut, $Nimetaht$Nimetaht2!"
+elif [ $aeg -ge 12 -a $aeg -lt 18 ]
+then
+        echo " Tere päevast, $Nimetaht$Nimetaht2!"
+elif [ $aeg -ge 18 -a $aeg -lt 22 ]
+then
+        echo " Head õhtut, $Nimetaht$Nimetaht2!"
+elif [ $aeg -ge 22 -a $aeg -lt 24 ] || [ $aeg -ge 0 -a $aeg -lt 6 ]
+then
+        echo " Head ööd, $Nimetaht$Nimetaht2!"
+else
+	echo "$Hea Nimetaht$Nimetaht2! Te viibite mingis alternatiivses ajas!"
+
+fi
