@@ -1,0 +1,17 @@
+#!/bin/bash
+## Ülesanded tärnidega. Sisemised tsüklid. Rea numbriga võrdne tärnide arv.
+        echo -n "Sisesta ridade arv:"
+read k
+
+for (( i = 1; i <= $k; i++ ))      ### Outer for loop ###
+do
+        echo -n "$i. "
+
+    for (( j = 1; j <= i; j++ )) ### Inner for loop ###
+    do
+          echo -n "* "
+    done
+  echo "" #### print the new line ###
+done
+
+
