@@ -1,0 +1,19 @@
+#!/bin/bash
+## Ülesanded tärnidega. Sisemised tsüklid
+	echo -n "Sisesta ridade arv:"
+read k
+	echo -n "Sisesta tärnide arv reas:"
+read l
+
+for (( i = 1; i <= $k; i++ ))      ### Outer for loop ###
+do
+        echo -n "$i. "
+    for (( j = 1; j <= $l; j++ )) ### Inner for loop ###
+    do
+          echo -n "* "
+    done
+  echo "" #### print the new line ###
+done
+#Püramiid
+
+
