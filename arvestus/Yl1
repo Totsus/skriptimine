@@ -1,0 +1,13 @@
+#!/bin/bash
+## arvestus scripimisest. Ülesanne 1: INFO -Skript peab tervitama kasutajat ja väljastama hetke kuupäeva ning kellaaja.
+## Tanel Otsus
+
+Nimetaht=$(whoami | cut -c1 | tr [a-z] [A-Z])
+Nimetaht2=$(whoami | cut -c2-)
+	echo "Tere, $Nimetaht$Nimetaht2!"
+
+timestamp="Täna on "`date +%d.%m.%Y" kell "%H:%M`
+	echo "$timestamp"
+
+
+# skripti lõpp
