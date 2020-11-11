@@ -1,0 +1,33 @@
+#!/bin/bash
+##Tanel Otsus
+## Arvestus ülesanne 2: väljastada kasutajale menüü mille abil saab kasutaja valida
+## soovitud toidu millele järgneb toidu kirjeldus.
+	echo "Palun tehke allolevast menüüst numbriline valik"
+
+	echo "1) liha ja kartul"
+	echo "2) supp ja krõpsud"
+	echo "3) supp ja salat"
+
+	echo -n "Palun tee oma valik: "
+
+read valik
+
+if [ $valik -eq 1 ] 
+then
+	echo "Väga maitsev, aga jälgi oma tervist!"
+	echo "Head isu!"
+
+elif [ $valik -eq 2 ]
+then
+	echo "Brititoit on maisev!"
+	echo "Head isu!"
+
+elif [ $valik -eq 3 ]
+then
+        echo "Nii tervislik ja igav..."
+	echo "Head isu!"
+else
+	echo "Vabandust! Sellist valikut ei ole."
+
+fi
+#Skripti lõpp
