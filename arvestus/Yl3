@@ -1,0 +1,17 @@
+#!/bin/bash
+##Tanel Otsus
+##Arvestus ülesanne3: kujundi loomine skrpti abil.
+
+echo -n "Sisesta ridade arv:"
+read k
+
+for (( i = 1; i <= $k; i++ ))
+do
+        echo -n "$i. "
+
+    for (( j = 1; j <= i; j++ ))
+    do
+          echo -n "* "
+    done
+  echo ""
+done | tac
