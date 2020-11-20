@@ -3,13 +3,13 @@ update
 install - apt install git
 
 *tava kasutajana:
-esimene kord:
+ALATI KUI ALUSTAD UUT REPOT HAKKA SIIT:
 a)seadistamine - määra kasutajanimi, email, editor
 git config --global user.name "ees perenimi"
 git config --global user.email kasutaja@nimi
 git config --global cora.editor nano
 
-b) loo kataloog, kus hakkad skriptima
+b) loo kataloog, kus hakkad N:skriptima
 mkdir skriptimine
 
 c)sisene kausta
@@ -25,9 +25,9 @@ git remote add (kausta nim)https://github.com/Totsus/skriptimine
 git remote -v (-v näitab URL)
 
 g)lisa fail jälgimisele github+i
-git add (faili nimi git_kasutamine)
+git add (N:aili nimi git_kasutamine)
 git commit -m "abil saab kirjeldada tehtud muudatuste sisu"
-git puch -uf (kataloog skriptimine) master - saadab muudatused github-i, selleks küsib kasutajat ja parooli
+git puch -uf (N:kataloog skriptimine) master - saadab muudatused github-i, selleks küsib kasutajat ja parooli
 
 tulemust saab konrollida github+s
  
